@@ -19,7 +19,7 @@ local Cmdr do
 		MashToEnable = false;
 		ActivationUnlocksMouse = false;
 		HideOnLostFocus = true;
-		PlaceName = "Cmdr";
+		PlaceName = "Rice Simulator";
 		Util = Util;
 		Events = {};
 	}, {

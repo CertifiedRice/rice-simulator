@@ -3,3 +3,4 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Cmdr = require(ServerScriptService.Cmdr)
 
 Cmdr:RegisterDefaultCommands()
+Cmdr:RegisterHooksIn(ServerScriptService.Hooks)
