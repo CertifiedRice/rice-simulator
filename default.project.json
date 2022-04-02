@@ -41,6 +41,11 @@
         "$ignoreUnknownInstances": true,
         "$path": "src/Workspace"
       },
+      "StarterPack": {
+        "$className": "StarterPack",
+        "$ignoreUnknownInstances": true,
+        "$path": "src/StarterPack"
+      },
       "ServerScriptService": {
         "$className": "ServerScriptService",
         "$ignoreUnknownInstances": true,
