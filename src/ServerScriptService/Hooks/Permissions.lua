@@ -1,4 +1,3 @@
--- A ModuleScript inside your hooks folder.
 return function (registry)
 	registry:RegisterHook("BeforeRun", function(context)
 		if context.Group == "DefaultAdmin" and context.Executor.UserId ~= game.CreatorId then
