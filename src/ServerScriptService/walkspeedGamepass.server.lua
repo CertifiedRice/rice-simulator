@@ -1,4 +1,4 @@
-local id = 37917865
+local id = 38118249
  
 game:GetService("MarketplaceService").PromptGamePassPurchaseFinished:Connect(function(plr,ido,purchased)
  if purchased and ido == id then
