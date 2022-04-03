@@ -31,6 +31,16 @@
       },
       "$ignoreUnknownInstances": true
     },
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "$ignoreUnknownInstances": true,
+      "$path": "src/ReplicatedStorage"
+    },
+    "ReplicatedFirst": {
+      "$className": "ReplicatedFirst",
+      "$ignoreUnknownInstances": true,
+      "$path": "src/ReplicatedFirst"
+    },
     "Workspace": {
       "$className": "Workspace",
       "$ignoreUnknownInstances": true,
