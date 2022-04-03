@@ -1,11 +1,16 @@
-local gamepass = 37917865
-local market = game:GetService("MarketplaceService")
-
-game.Players.PlayerAdded:Connect(function(player)
-    player.CharacterAdded:Connect(function(character)
-        if market:UserOwnsGamePassAsync(player.UserId, gamepass) then
-            local h = character:WaitForChild("Humanoid")
-            h.WalkSpeed = 50
-        end
-    end)
+local id = 37917865
+local multi = 2
+ 
+game:GetService("MarketplaceService").PromptGamePassPurchaseFinished:Connect(function(plr,ido,purchased)
+ if purchased and ido == id then
+  plr.Character.Humanoid.WalkSpeed = 16
+ end
+end)
+ 
+game.Players.PlayerAdded:Connect(function(plr)
+ plr.CharacterAdded:connect(function(char)
+  if game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players[char.Name].UserId, id) then
+   char.Humanoid.WalkSpeed = 50
+  end
+ end)
 end)
